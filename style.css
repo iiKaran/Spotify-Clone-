@@ -1,0 +1,152 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+body{
+ background-color: rgba(187, 168, 132, 0.725);
+}
+nav{
+ display: flex;
+ align-items: center;
+ background-color: black;
+ color: white;
+ text-transform: capitalize;
+ height: 8vh;
+ font-size: 1.7rem;
+}
+.logo{
+   font-weight: 800;
+   padding: 12px;
+   display: flex;
+   gap: 13px;
+   align-items: center;
+}
+.logo img {
+ width: 40px;
+
+}
+nav ul{
+     list-style: none;
+     display: flex;
+     margin: 0 19px;
+     justify-content: space-between;
+     gap: 19px;
+}
+.logo>span , nav ul li {
+ cursor: pointer;
+ transition: all .2s;
+}
+.logo>span:hover ,nav ul li:hover {
+ opacity: 0.6;
+}
+.container{
+ background-color: black;
+ color: white;
+ height: 70vh;
+ width: 80vw;
+ margin: auto;
+ margin-top: 4px;
+ border-radius: 9px;
+ background: url("images/bg.jpg");
+ background-position: 0%;
+ background-size: cover;
+}
+.bottom{
+ position: fixed;
+ bottom: 0px;
+ background-color: black;
+ width: 100%;
+ height: 20vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.sub-container{
+     /* border: 2px solid red; */
+     width: 50%;
+     height: 100%;
+     display: flex;
+     padding: 9px;
+     margin: 0px 20px ;
+    }
+
+.song-list{
+     
+    /* border: 2px solid red;    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+.song-item{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: 2px solid pink;
+ width: 100%;
+ padding: 3px;
+ margin-top: 1px ;
+ border-radius: 9px;
+}
+.cover-img img{
+  width: 35px;
+  padding: 3px; 
+ border-radius: 50%;
+ margin-left: 19px;
+}
+
+
+#progress{
+ width: 70%;
+ cursor: pointer;
+ transition: all .2s;
+}
+#progress:hover{
+ opacity: 0.6;
+}
+.icons{
+ margin: 26px 0px;
+}
+.icons i{
+ color: white;
+ margin: 0px 19px;
+ cursor: pointer;
+}
+.icons i:hover{
+ opacity: 0.6;
+}
+#curr-song{
+ color: white;
+ position: absolute;
+ left: 15%;
+ padding: 2px;
+ /* font-size: 1.8rem; */
+ text-transform: capitalize;
+ display: flex;
+ align-items: center;
+ gap: 12px;
+}
+.desc-item{
+ flex-basis: 48%;
+}
+#curr-song img{
+ width: 90px;
+}
+#gif{
+ opacity: 1;
+ transition: all 2s;
+}
+.time-stamp span i {
+ margin: 8px;
+ cursor: pointer;
+}
+.time-stamp span i:hover{
+ opacity: 0.6;
+}
